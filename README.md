@@ -860,6 +860,211 @@ int[] brr = {13, 99, 16};// valid index 0,1,2
 	
 How to access elements from an array:
 --------------------------------------
+int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+		System.out.println("----------Accessing elements using for loop------------");
+
+		for (int i = arr.length - 1; i >= 0; i--) {
+
+			int x = arr[i];
+			System.out.println(x);
+		}
+
+		System.out.println("----------Accessing elements using forEach loop------------");
+
+		for (int x : arr) {
+			System.out.println(x);
+		}
+
+-------------------------------------------------
+Command Line Arguments:
+------------------------
+
+public class Test {
+
+	public static void main(String[] args) {	
+
+		System.out.println("Hello");	
+
+	}
+
+}
+
+Compilation > javac Test.java
+Execution   > java Test
+Execution   > java Test 10 20 shadab
+						-------------
+						command line arguments => { "10", "20","shadab"} 
+						                      main( --------------------);
+
+==================================================================================
+Inheritance:
+------------
+1. It is a way of code reusability.
+2. Classes support single inheritance in Java
+3. A class can use extends keywords to represent its parent.
+
+4. Method Overiding:(Runtime | late | dynamic polymorphism)
+-----------------------------------------------------------
+
+class A{
+	void foo()
+	{
+		System.out.println("Hello from A");
+	}
+}
+
+class B extends A{
+	void foo()
+	{
+		System.out.println("Hello from B");
+	}
+}
+
+-------------------------------------------------------------------------
+       A a1 = new A();
+		a1.f1(); // f1() from class A
+		a1.f2(); // "f2() from class A"
+		a1.f3(); // f3() from class A
+		// a1.f4(); //ERROR-> f4() not found in class A
+
+		System.out.println("============================================");
+
+		B b1 = new B();
+		b1.f1(); // f1() from class B
+		b1.f2(); // f2() from class B
+		b1.f3(); // f3() from class A
+		b1.f4(); // f4() from class B
+
+		System.out.println("============================================");
+
+		A x = new B(); // A super type variable can contains a reference of sub type.
+		x.f1(); // f1() from class A
+		x.f2(); // f2() from class B
+		x.f3(); // f3() from class A
+		// x.f4(); // ERROR
+
+		System.out.println("============================================");
+
+		// B y = new A(); // ERROR
+
+-------------------------------------------------------------------------------------------
+Abstract class: To restric instanciation of any class.
+-------------------------------------------------------
+
+abstract public class A
+{
+		void f1(){}
+		
+	abstract void f2();
+
+}
+
+
+-----------------------------------------------
+Final class: final class cannot be inherited.
+Final Variable: final variable cannot re-assigned
+Final method: cannot overridden
+-------------------------------------------
+
+Interface:
+---------------
+-> Interface is an user define data type.
+-> interface support multiple inheritance
+
+abstract class A
+{
+	void f1(){}
+	abstract void f2();
+	
+	int i =10;
+	
+	
+}
+-----------------------------
+interface always super type.
+Till Java7:
+===============================
+interface I
+{
+	                void f3();
+	public abstract void f4();
+	
+	                    int i =10;
+	public static final int j =10; // constant
+
+}
+---------------------------------------------------
+class -- extends --> class
+interface -- extends --> interface
+
+class -- implements --> interface
+interface -- ???? --> class // NOT POSSIBLE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Reverse an array.
+2. Take 2 array and combined into 1 array.
+3. Print sum and average of elements of the given array
+
+
+
+
+Java Lab Challenges
+
+1.	Program to count vowels and consonants in given String in Java? 
+2.	Program to reverse a String in place in Java?
+3.	Program to print Prime numbers from 1 to 100? 
+4.	Program to find largest prime factors of a given integer in Java? 
+5.	Program to reverse words in a given String in Java?
+6.	Program to find all prime factors of a number in Java? 
+7.	Program to generate prime numbers up to 100.
+8.	Program to remove duplicate characters from String in Java?
+9.	Program to check if a year is a leap year in Java? 
+10.	Program to find the square root of a number without using a library function in Java? 
+11.	Program to remove duplicate elements from the array in Java?
+12.	Program to check if given number is prime in Java?
+13.	Program to check if a number is binary in Java?
+14.	Program to calculate Area of Triangle in Java?
+15.	Program to print Fibonacci series in Java?
+16.	Program to calculate the square root of a given number in Java?
+17.	Program to find the highest occurring word from a given file in Java?
+18.	Program to check if given String is palindrome or not in Java?
+19.	Program to find all permutations of a given String in Java? 
+20.	Program to calculate the sum of all elements of an array in Java?
+21.	Program to reverse an array in place in Java?
+22.	Program to find if given Integer is Palindrome in Java? 
+23.	Program to find frequency of every digit in a number?
+24.	Program to find frequency of every alphabet in a String?
+25.	Program on Decimal to Hexadecimal Number Conversion?
+26.	Program on Decimal to Octal Number Conversion?
+27.	Program on Decimal to Binary Number Conversion?
+28.	Program to find Shortest and the Longest word in a Sentence?
+29.	Program for displaying the Denominations of an Amount?
+30.	Program to find the LCM of two numbers?
+31.	Printing the initials of a Name or First letters of each word of a Sentence?
+32.	Swapping two numbers without using third variable?
+33.	Program to check if two given Strings Are Anagram in Java? 
+
+An anagram of a string is another string that contains same characters, only the order of characters can be different. For example, “abcd” and “dabc” are anagram of each other.
+
+ 
+
+
+
+
 
 
 

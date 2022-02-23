@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Encapsulate field &apos;Cat.age&apos; in &apos;Cat&apos;&#x0D;&#x0A;- Original project: &apos;Offline&apos;&#x0D;&#x0A;- Original element: &apos;Cat.age&apos;&#x0D;&#x0A;- Getter method name: &apos;getAge&apos;&#x0D;&#x0A;- Setter method name: &apos;setAge&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;age&apos;" flags="589830" getter="getAge" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{Cat.java[Cat^age" insertion="-1" setter="setAge" stamp="1645342869678" version="1.0" visibility="1"/>
-</session>

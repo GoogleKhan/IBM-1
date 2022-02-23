@@ -1,7 +1,0 @@
-class Employee extends Person{
-	
-	Dog dog;
-	
-	void work(){}
-
-}

@@ -1,0 +1,16 @@
+package p2;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Parent v1 = new Parent();
+		
+		Child v2 = new Child();
+
+		Parent v3 = new Child();
+	//	Child v4 = new Parent(); // C.E.
+
+	}
+
+}

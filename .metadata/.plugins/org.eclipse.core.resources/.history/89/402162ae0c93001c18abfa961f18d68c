@@ -1,0 +1,10 @@
+package p2;
+
+public class Child extends Parent {
+
+	@Override
+	void foo() {
+		// TODO Auto-generated method stub
+		super.foo();
+	}
+}

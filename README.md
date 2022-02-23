@@ -64,7 +64,7 @@ Syntax:
 	// members  either STATIC or INSTANCE
 		1. variable
 		2. methods
-		3. constructor
+		3. *constructor
 		4. initializer block
 		5. inner/nested class
 }
@@ -107,8 +107,7 @@ Accessing members:
 -----------------------
 	
  <ClassName>.<member> // static
-  <ObjRef>.<member> // instance as well as static
-	
+ <ObjRef>.<member> // instance as well as static
 	
 ------------------------------------------
 inheritance: It is a way of code reusability
@@ -412,7 +411,9 @@ Loops:
 1. for loop
 2. while loop
 3. do-while
-4. Enhance forloop / forEach
+4. Enhance forloop / forEach (array/collection)
+	for(<type> <var> : <expr>){
+	}
 
 -----------------------------------
 initialization
@@ -592,14 +593,273 @@ Input six non-negative digits: 123456
 Expected Output :
 1 2 3 4 5 6
 
+--------------------------------------------------------------------
+The main():
+-------------
 
+public class Test{
+	public static void main(String[] args)
+	{
+		// body
+	}
+}
 
+1. called by JVM which is an external entity, hence declared public.
+2. It can be called with the name of class directly.
+		Test.main(----);
+3. void means it will not return any value.
+4. args is a command line arguments.
 
+----------------------------------------------------------------------
 
+Methods:
+---------
+It is a block or group of statement which can be call mutiple times from another code.
 
+Syntax:
+-------
+<modifier> <returnType> <name> (<parameterList>) <throws>
+	{
+		//body
+	}
+Example:
+---------
+a) void foo()
+	{
+	}
 
+b) int sum(int a, int b)
+	{
+		return a+b;
+	}
 
+Calling methods:
+-----------------------
+	
+ <ClassName>.<method> // static
+ <ObjRef>.<method> // instance as well as static
 
+-------------------------------------------------
+Method Overloading:(Compile time | early | static polymorphism)
+-------------------
+Within a java class, 2 or more than 2 methods having 
+same name but different paramer list,called ovrloaded method, 
+and this phenomina called method overloading.
+
+If method names are same:
+	1. number of parameters
+	2. data type 
+	3. order of parameters
+
+void sum(int a, float b) {
+		System.out.println(a + b);
+	}
+
+void sum(float a, int b) {
+		System.out.println(a + b);
+	}
+	
+Variable Arguments:
+--------------------
+// Var-Args
+	void sum(int... a) {
+
+		int sum = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			sum = sum + a[i];
+		}
+
+		System.out.println(sum);
+
+	}
+        obj.sum();// 0
+		obj.sum(2); // 2
+		obj.sum(2, 3); // 5
+		obj.sum(2, 3, 4); // 9
+		obj.sum(2, 3, 4, 5);
+-----------------------------------------------------
+Access Modifier: public, protected, default, private
+Other Modifier: static, final, abstract, native, transient, 
+				volatile, synchronized, strictfp
+
+--------------------------------------------
+Constructor:
+-------------
+1. Constructor is a special member of a class.
+2. Constructor are used to construct initial state of an object.
+3. It is similar to the method but not a method 
+4. Rules:
+	a. Same name as of the class
+	b. only access modifiers are allowed
+	c. no return type even void
+
+Example:
+-------------
+public class Car {
+
+	// Default Constructor
+	public Car() {
+		h = 5;
+		w = 7;
+	}
+
+	// Parameterized constructor
+	public Car(int x, int y) {
+		h = x;
+		w = y;
+	}
+
+	int h;
+	int w;
+
+	void display() {
+		System.out.println(h + " and " + w);
+	}
+
+}
+
+---------------------------------------------------------------
+Access Modifier:
+=================
+public: Access from every where
+protected: 
+		a) Within the same package.
+		b) Outside the package through inheritance.
+default: Within the same package.
+private: Only within the class.
+
+*)See Code example in Eclipse Project
+---------------------------------------------------------------
+Package:
+---------
+It is an encapsulation mechanism to group related classes and iterfaces.
+
+HMS
+ |-hospital
+	|- A.java, B.java, C.java, D.java, E.java, F.java .....
+	
+HMS
+ |-hospital
+	|- A.java, B.java	
+	|-doctors
+		|-cardio
+			|- C.java
+		|-ent
+			|-D.java
+	|-patient
+		|-indoor
+			|E.java, F.java
+		|-outdoor
+	|-staff
+		|
+	
+----------------------------
+package test;
+
+import p1.A; // only class A from package p1
+
+import p3.*; // all public c;lass from package p3;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		A a1 = new A();
+
+		p2.B b1 = new p2.B(); // fullyQualifiedTypeName
+
+		C c1 = new C();
+		D d1 = new D();
+		
+	//	X x1= new  X(); // Error
+
+	}
+}
+
+-------------------------------------------------------------------
+Wrapper Classes:
+-----------------
+boolean -> Boolean
+char    -> Character
+
+----------------
+byte    -> Byte
+short   -> Short
+int     -> Integer
+long    -> Long
+
+float   -> Float
+double  -> Double
+------------------
+void	-> Void
+	
+-------------------------------------------------------------------
+UseCase-1: minimum and maximum values for numeric data types
+------------------------------------------------------------------
+  XXX.MIN_VALUE  and XXX.MAX_VALUE
+
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE);
+		
+		System.out.println(Float.MIN_VALUE);
+		System.out.println(Float.MAX_VALUE);		
+	
+UseCase-2: XXX.parseXXX(String)
+------------------------------------------------------------------
+		int x = 10;
+		// String s = x + ""; OR
+		String s = String.valueOf(x);
+		System.out.println(s);
+
+		System.out.println("---------------------------");
+
+		// String to Numeric Conversion
+
+		String s1 = "101";
+
+		int y = Integer.parseInt(s1);
+		System.out.println("y= " + y);
+
+		float z = Float.parseFloat(s1);
+		System.out.println("z= " + z);
+
+		String s2 = "Abc";
+		int i = Integer.parseInt(s2);
+		System.out.println(i);// Exception in thread "main" java.lang.NumberFormatException: For input string:
+								// "Abc"
+								
+UseCase-3 Used in Generics and Collection Framework
+------------------------------------------------------------------
+1. Array is a linear Data Structure.
+2. Array can cantains similar kind of data|elements|objects
+3. Arrays are objects in Java.
+4. Every array has an instance field named length which contains the size of array.
+6. Array elements are accessed by using index and index starts from 0.
+7. If we use an invalid index, we will get an exception AIOBE.
+
+Syntax:
+--------
+a) <type>[] <var> = new <type>[<size>];
+
+b) <type>[] <var> = {<values>};
+
+--------------------------------------
+	int[] arr = new int[3];// valid index 0,1,2
+		arr[0] = 13;
+		arr[1] = 99;
+		arr[2] = 16;
+
+		System.out.println(arr.length); //3
+		
+		System.out.println(arr[1]); //99
+		System.out.println(arr[-1]); // AIOBE
+		
+-----------------------------------------------------  
+int[] brr = {13, 99, 16};// valid index 0,1,2
+	
+How to access elements from an array:
+--------------------------------------
 
 
 

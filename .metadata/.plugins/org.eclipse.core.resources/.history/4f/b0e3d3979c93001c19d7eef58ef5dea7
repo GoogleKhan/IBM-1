@@ -1,0 +1,15 @@
+package p2;
+
+public class Car {
+
+	int h;
+	int w;
+	float wc;
+
+	void move() {
+	}
+
+	void avg() {
+	}
+
+}

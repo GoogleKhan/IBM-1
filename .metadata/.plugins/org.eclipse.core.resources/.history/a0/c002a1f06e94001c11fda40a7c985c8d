@@ -1,0 +1,16 @@
+package p2;
+
+import p1.A;
+
+//From the another class but different package
+public class E  {
+
+	void m5() {
+
+		System.out.println(a); // OK
+		System.out.println(b); // OK through inheritance
+		//System.out.println(c); // ERROR
+		//System.out.println(d); // ERROR
+	}
+
+}

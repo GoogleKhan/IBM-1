@@ -1,0 +1,13 @@
+package p2;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Child extends Parent {
+
+	@Override
+	public Bike foo() throws FileNotFoundException {
+
+		return null;
+	}
+}

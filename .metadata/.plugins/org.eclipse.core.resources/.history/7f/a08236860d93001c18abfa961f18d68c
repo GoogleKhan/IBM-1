@@ -1,0 +1,10 @@
+package p2;
+
+public class Parent {
+
+	 Vehicle foo() {
+
+		return null;
+	}
+
+}

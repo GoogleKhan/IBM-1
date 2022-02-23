@@ -1,0 +1,17 @@
+package p2;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 3;
+
+		SOP(a + b); // 13
+		SOP(a - b); // 7
+		SOP(a * b); // 30
+		SOP(a / b); // 3 OR 3.33
+		SOP(a % b); // 1
+
+	}
+
+}

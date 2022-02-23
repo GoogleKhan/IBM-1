@@ -1,0 +1,17 @@
+package p7;
+
+public class Car {
+	
+	//Default Constructor
+	public Car() {
+		
+	}
+	
+	int h;
+	int w;
+
+	void display() {
+		System.out.println(h + " and " + w);
+	}
+
+}

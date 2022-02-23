@@ -1,0 +1,14 @@
+package p1;
+
+//From the another class but same package
+public class B {
+
+	void m2() {
+
+		System.out.println(a); // OK
+		System.out.println(b); // OK
+		System.out.println(c); // OK
+		System.out.println(d); // OK
+	}
+
+}

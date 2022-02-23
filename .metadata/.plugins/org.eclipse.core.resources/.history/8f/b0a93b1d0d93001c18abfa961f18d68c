@@ -1,0 +1,10 @@
+package p2;
+
+public class Parent {
+
+	public float foo() {
+
+		return 0;
+	}
+
+}

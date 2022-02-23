@@ -1,0 +1,10 @@
+package p7;
+public class Car
+{
+	int h;
+	int w;
+	
+	void display(){
+	  SOP(h + " and " + w);
+	}
+}

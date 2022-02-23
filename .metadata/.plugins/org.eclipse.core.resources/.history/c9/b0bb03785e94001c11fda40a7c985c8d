@@ -1,0 +1,15 @@
+package p7;
+
+public class Sample1 {
+
+	void sayHello() {
+
+		System.out.println("Hello");
+	}
+
+	static void sayBye() {
+
+		System.out.println("Bye, TC...");
+	}
+
+}

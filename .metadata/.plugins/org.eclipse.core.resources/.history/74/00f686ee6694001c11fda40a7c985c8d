@@ -1,0 +1,9 @@
+public class Car
+{
+	int h;
+	int w;
+	
+	void display(){
+	  SOP(h + " and " + w);
+	}
+}

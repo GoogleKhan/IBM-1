@@ -1,0 +1,12 @@
+package p2;
+
+public class Parent {
+
+	public Vehicle foo()  {
+		
+		System.out.println("I am Parent");
+
+		return null;
+	}
+
+}

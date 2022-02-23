@@ -1,0 +1,27 @@
+package p7;
+
+public class Sample2 {
+
+	void sayHello() {
+
+		System.out.println("Hello");
+	}
+
+	static void sayBye() {
+
+		System.out.println("Bye, TC...");
+	}
+
+	public static void main(String[] args) {
+
+		// call sayHello()
+		Sample2 obj = new Sample2();
+		obj.sayHello();
+		obj.sayBye();
+
+		// call sayBye()
+		Sample2.sayBye();
+
+	}
+
+}

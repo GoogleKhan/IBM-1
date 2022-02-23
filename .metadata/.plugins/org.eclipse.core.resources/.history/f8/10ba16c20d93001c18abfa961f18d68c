@@ -1,0 +1,12 @@
+package p2;
+
+import java.io.IOException;
+
+public class Parent {
+
+	public Vehicle foo() throws IOException {
+
+		return null;
+	}
+
+}

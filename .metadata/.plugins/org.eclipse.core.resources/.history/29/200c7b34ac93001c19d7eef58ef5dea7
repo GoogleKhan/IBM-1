@@ -1,0 +1,15 @@
+package p2;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+		int x =15;
+		
+		boolean b = 10 < x < 20; // C.E.
+				  
+		System.out.println(b); // 
+
+	}
+
+}

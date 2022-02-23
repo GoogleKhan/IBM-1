@@ -1,0 +1,10 @@
+package p2;
+
+public class Child extends Parent {
+
+	@Override
+	public Bike foo() throws Exception {
+
+		return null;
+	}
+}

@@ -1,0 +1,23 @@
+
+//Display the minimum and maximum value for int, float and double 
+package p1;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+
+	
+
+		int x = 101; 
+		System.out.println(x); // 101 as a number
+
+		 String s = x + ""; 
+		 System.out.println(s); // 101 as a text/string
+		 
+		 String s2 = "x";
+		 System.out.println(s2); // x
+
+
+	}
+
+}

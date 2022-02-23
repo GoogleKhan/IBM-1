@@ -1,0 +1,12 @@
+package p2;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+		double d = 2.3;
+		float f = (float) 1.2;
+
+	}
+
+}

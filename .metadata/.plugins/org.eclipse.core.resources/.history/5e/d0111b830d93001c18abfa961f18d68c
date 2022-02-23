@@ -1,0 +1,10 @@
+package p2;
+
+public class Child extends Parent {
+
+	@Override
+	private Bike foo() {
+
+		return null;
+	}
+}

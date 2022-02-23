@@ -1,0 +1,18 @@
+package p7;
+
+public class Sample3 {
+
+	void sum(int... a) {
+
+	}
+
+	public static void main(String[] args) {
+
+		Sample3 obj = new Sample3();
+
+//		obj.sum(2, 3);
+//		obj.sum(2, 3, 4);
+
+	}
+
+}

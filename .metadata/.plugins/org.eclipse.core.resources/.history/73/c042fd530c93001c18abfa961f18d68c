@@ -1,0 +1,14 @@
+package p1;
+
+public class Employee extends Person {
+	
+	public Employee() {
+		super();
+	}
+
+	Dog dog;
+
+	void work() {
+	}
+
+}
